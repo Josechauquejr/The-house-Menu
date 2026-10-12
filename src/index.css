@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth}
+body{background:#fff;color:#000;font-family:Outfit,system-ui,sans-serif;overflow-x:clip}
+.rv{opacity:0;transform:translateY(22px) scale(.96);transition:opacity .5s,transform .5s}.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none}html{scroll-behavior:auto}}
+.hide-sb{scrollbar-width:none}.hide-sb::-webkit-scrollbar{display:none}
+.pop{display:inline-block;animation:pop .3s}@keyframes pop{0%{transform:scale(1.4)}100%{transform:scale(1)}}
+.sheet{animation:up .3s ease-out}@keyframes up{from{transform:translateY(40px);opacity:0}}
+input::placeholder{color:#888}
+:root { color-scheme: dark; font-family: 'Outfit', system-ui, sans-serif; }
+body { margin: 0; }
+button, input { font: inherit; }
+button { -webkit-tap-highlight-color: transparent; }
